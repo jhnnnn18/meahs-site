@@ -127,3 +127,109 @@ figcaption {
   font-style: italic;
   color: #5C2D91;
 }
+
+/* ---------- Background images page (assignment08.html) ---------- */
+
+/* Background image on the body: a small tile repeated across the whole window */
+body.bg-page {
+  background-color: #ece4f5;
+  background-image: url(images/bg-pattern.png);
+  background-repeat: repeat;
+  background-position: left top;
+}
+
+/* Container div: set width + auto side margins centers it, with space around it */
+#bg-container {
+  width: 860px;
+  max-width: 90%;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.bg-header {
+  background: linear-gradient(135deg, #5C2D91, #3b1d5e);
+  border-bottom: 5px solid #f2c94c;
+  padding: 1.5rem 1rem;
+}
+
+.bg-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+
+.bg-header .tagline {
+  margin: 0;
+  font-style: italic;
+  color: #e6d9f5;
+}
+
+/* Navigation: an unordered list styled with descendant selectors */
+.bg-nav {
+  background-color: #3b1d5e;
+}
+
+.bg-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.bg-nav li {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+/* Small icon as a background image, placed to the right of the link text */
+.bg-nav li a {
+  display: block;
+  margin: 0;
+  padding: 10px 28px 10px 14px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  background-image: url(images/arrow-icon.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* Rollover effect */
+.bg-nav li a:hover {
+  background-color: #5C2D91;
+  color: #f2c94c;
+}
+
+.bg-page main {
+  padding: 0 2rem 1rem;
+}
+
+.bg-page main h2 {
+  color: #5C2D91;
+}
+
+/* Links inside paragraphs in the main text */
+.bg-page main p a {
+  color: #5C2D91;
+}
+
+.feature {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.feature img {
+  width: 400px;
+  height: auto;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.feature figcaption {
+  font-style: italic;
+  color: #5C2D91;
+}

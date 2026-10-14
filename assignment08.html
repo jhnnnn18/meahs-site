@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEAH | Background Images</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-page">
+  <!-- Container div: surrounds all the content and is centered in the browser window -->
+  <div id="bg-container">
+    <header class="bg-header">
+      <h1>MEAH</h1>
+      <p class="tagline">Working with Background Images</p>
+    </header>
+
+    <nav class="bg-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="assignment07.html">Gallery</a></li>
+        <li><a href="assignment08.html">Backgrounds</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Foreground vs. Background Images</h2>
+      <p>Most images on a web page are <strong>foreground images</strong>. They are part of the
+        page's content, so they are added in the HTML with the <code>img</code> tag. A photo in a
+        gallery or a picture that goes with an article is a foreground image.</p>
+
+      <figure class="feature">
+        <img src="images/feature.jpg" alt="Describe your image here">
+        <figcaption>Replace this placeholder with your own image.</figcaption>
+      </figure>
+
+      <p><strong>Background images</strong> work differently. They are decoration, not content, so
+        they are added with CSS instead of HTML. The soft dotted pattern behind this page is a
+        single small tile, only 40 pixels square, that the browser repeats across and down until
+        it fills the whole window. Because it is set on the <code>body</code> element, it stays
+        behind everything else.</p>
+
+      <h2>Keeping Text Readable</h2>
+      <p>A busy background placed directly behind text makes it hard to read and pulls attention
+        away from photos. To avoid that, this page uses the background image only on the
+        <code>body</code>. The container that holds the text has its own background color, which
+        is white at 92% opacity, written as <code>rgba(255, 255, 255, 0.92)</code>. A hint of
+        the pattern shows through at the edges, but the text sits on a calm, high-contrast
+        surface.</p>
+
+      <h2>Styling the Navigation Links</h2>
+      <p>The menu above is an unordered list inside a <code>nav</code> element. The links are
+        styled with the descendant selector <code>nav li a</code>, which means "an
+        <code>a</code> element that is inside an <code>li</code> that is inside a
+        <code>nav</code>." This affects only the menu links, not links in the main text. Each menu
+        link has a small arrow icon as a background image, placed with
+        <code>background-position: right center</code> and <code>no-repeat</code>. Extra padding
+        on the right side leaves room for it. Move your mouse over a link to see the
+        <code>a:hover</code> rollover effect.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 MEAH</p>
+    </footer>
+  </div>
+</body>
+</html>
