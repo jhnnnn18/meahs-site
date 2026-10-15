@@ -3,11 +3,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   color: #222;
-  background: #fafafa;
+  /* Background image for every page that links this stylesheet */
+  background-color: purple;
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
-  background: #5C2D91;
+  background: purple;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -30,7 +36,10 @@ nav a:hover {
 main {
   max-width: 800px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 1rem 1.5rem;
+  /* Solid-ish panel so text stays readable over the background image */
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
 }
 
 img {
@@ -42,6 +51,11 @@ footer {
   text-align: center;
   padding: 1rem;
   color: #666;
+}
+
+/* Footers that sit directly on the background image need light text */
+body > footer {
+  color: #ddd;
 }
 
 .calendar {
@@ -129,14 +143,6 @@ figcaption {
 }
 
 /* ---------- Background images page (assignment08.html) ---------- */
-
-/* Background image on the body: a small tile repeated across the whole window */
-body.bg-page {
-  background-color: #ece4f5;
-  background-image: url(images/bg-pattern.png);
-  background-repeat: repeat;
-  background-position: left top;
-}
 
 /* Container div: set width + auto side margins centers it, with space around it */
 #bg-container {

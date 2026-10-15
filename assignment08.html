@@ -37,18 +37,18 @@
       </figure>
 
       <p><strong>Background images</strong> work differently. They are decoration, not content, so
-        they are added with CSS instead of HTML. The soft dotted pattern behind this page is a
-        single small tile, only 40 pixels square, that the browser repeats across and down until
-        it fills the whole window. Because it is set on the <code>body</code> element, it stays
-        behind everything else.</p>
+        they are added with CSS instead of HTML. The image behind this page is set on the
+        <code>body</code> element in the site's stylesheet, so every page that links to that
+        stylesheet gets the same background. It uses <code>no-repeat</code> and
+        <code>center center</code> so it appears once, centered, and <code>background-size:
+        cover</code> stretches it to fill the whole window.</p>
 
       <h2>Keeping Text Readable</h2>
       <p>A busy background placed directly behind text makes it hard to read and pulls attention
-        away from photos. To avoid that, this page uses the background image only on the
+        away from photos. To avoid that, the background image is used only on the
         <code>body</code>. The container that holds the text has its own background color, which
-        is white at 92% opacity, written as <code>rgba(255, 255, 255, 0.92)</code>. A hint of
-        the pattern shows through at the edges, but the text sits on a calm, high-contrast
-        surface.</p>
+        is white at 92% opacity, written as <code>rgba(255, 255, 255, 0.92)</code>. The background
+        image shows around the edges, but the text sits on a calm, high-contrast surface.</p>
 
       <h2>Styling the Navigation Links</h2>
       <p>The menu above is an unordered list inside a <code>nav</code> element. The links are
