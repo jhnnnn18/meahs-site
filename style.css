@@ -239,3 +239,13 @@ figcaption {
   font-style: italic;
   color: #5C2D91;
 }
+
+/* Embedded Twitch clip */
+.twitch-video {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  margin: 1rem auto;
+  border: 0;
+}
